@@ -22,9 +22,8 @@ public class L01HW01 implements Homework {
     private int factorial(int n) {
         int result = n--;
 
-        while (n > 0) {
-            result *= n--;
-        }
+        for (; n > 0; n--)
+            result *= n;
 
         return result;
     }
